@@ -56,7 +56,7 @@ do
   cat <<EOF
       <amp-story-page id="page-${PAGE}">
         <amp-story-grid-layer preset="2021-background" template="fill">
-          <amp-img src="page-${PAGE}.png" width="${WIDTH}" height="${HEIGHT}" layout="responsive"></amp-img>
+          <amp-img src="page-${PAGE}.png" width="${WIDTH}" height="${HEIGHT}" layout="fill"></amp-img>
         </amp-story-grid-layer>
       </amp-story-page>
 EOF
@@ -64,7 +64,6 @@ done
 
 
 cat <<EOF
-      <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
     </amp-story>
   </body>
 </html>
